@@ -1,0 +1,387 @@
+/* scroll-bar */
+::-webkit-scrollbar{
+  width: 10px; /*width of scrollbar*/
+}
+
+::-webkit-scrollbar-track{
+  background-color: #f5f5f5; /*bg color of scrollbar*/
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #141c3a; /*color of scrollbar*/
+  border-radius: 5px; /*border-radius of scrollbar*/
+  border: 2px solid #f5f5f5; /*border of scrollbar*/
+}
+
+*{
+  scrollbar-width: thin; /*thin scrollbar*/
+  scrollbar-color: #141c3a #f5f5f5; /*color & bg color of scrollbar*/
+}
+
+
+/*---hero page---*/
+
+/*nav*/
+.signature{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.line{
+  width: 100%;
+  height: 0.80px;
+  background-color: #e0e0e0;
+  opacity: 0.6;
+  margin-top: -1px;
+}
+
+/*---about---*/
+.about{
+  height: 424.6px;
+  /* width: 1126.4px; */
+  margin-top: 90px;
+  /* margin-left: 390px; */
+  margin-left: 425px;
+}
+
+/* body{
+    overflow-x: hidden;
+     if i set margin-left 390px & avoid 425px then it is no horizontal bar if i use 425px then it will show horizontal bar and overflow-x: hidden property remove that horizontal scrollbar
+} */
+
+.profile_pic{
+  object-fit: cover;
+  border-radius: 23px;
+  width: 184px;
+  height: 184px;
+}
+
+@font-face{
+  font-family: 'GTSuperText';
+  src: url('fonts/GTSuperText.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.name{
+  font-family: 'GTSuperText', Georgia, serif;
+  font-size: 44px;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.designation{
+  margin-top: 10px;
+  font-size: 24px;
+  margin-bottom: 43px;
+  font-family: 'GTSuperText', Georgia, serif;
+}
+
+/* linkedin */
+.linkedin{
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* twitter */
+.twitter{
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* github */
+.github{
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* resume button */
+.resume{
+  height: 30px;
+  width: 131px;
+  border-radius: 20px;
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  font-size: inherit;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 22px;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.about-below{
+height: 100px;
+}
+
+/*---milestone---*/
+
+.milestone {
+  max-width: 593px;
+  background-color: #ffffff;
+  margin-left: 0; /* Align to the left */
+  margin-left: 425px;
+  margin-bottom: 60px;
+}
+
+.milestone h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  font-family: 'GTSuperText', Georgia, serif;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.milestone p {
+  font-family: 'GTSuperText', Georgia, serif;
+  font-size: 20px;
+  /* color: #666; */
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+.milestone .button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* button shadow */
+  font-weight: bold; /* Bold text */
+  font-family: 'GTSuperText', Georgia, serif;
+}
+
+.milestone .button:hover {
+  background-color: #000000; /* Black background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
+}
+
+/*---skills---*/
+
+.skills{
+  height: 254px;
+  width: 732.15px;
+  /* width: 65%; */
+  margin: 0 auto;
+  margin-left: 425px;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.skill-title{
+  height: 48px;
+  font-weight: lighter;
+  font-size: 40px;
+  font-family: 'GTSuperText', Georgia, serif;
+  margin-top: 18.4px;
+}
+
+.tech-skills{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* width: 168.04px; */
+  columns: 4;
+  column-gap: 70px;
+  line-height: 1.5;
+}
+
+.tech-skills > li{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/*---project---*/
+.project{
+  margin-left: 425px;
+  margin-bottom: 60px;
+}
+
+.project-cards{
+  width: 769px;
+  display: grid;
+  grid-template-columns: 314px 314px ;
+  grid-template-rows: 210px 210px;
+  gap: 20px;
+}
+.project-cards img{
+  height: 210px;
+  width: 314px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project h2{
+  margin-top: 18.4px;
+  font-size: 40px;
+  font-family: 'GTSuperText', Georgia, serif;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+
+.project p{
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 45px;
+}
+
+/* contact */
+.contact{
+  margin-left: 425px;
+  margin-bottom: 80px;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: 314px 292px;
+  grid-template-rows: 75px 75px;
+  gap: 25px;
+  margin-bottom: 24px;
+}
+
+.contact > h2{
+  margin-top: 18.4px;
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-family: 'GTSuperText', Georgia, serif;
+  font-weight: lighter;
+  line-height: 1.2;
+}
+
+.form p{
+  margin-top: 0px;
+  font-size: 18px;
+  font-family: 'GTSuperText', Georgia, serif;
+  margin-bottom: 8px;
+}
+
+.form-email > p{
+  margin-top: 27px;
+}
+
+.name-email input{
+  height: 46.4px;
+  width: 282px;
+  padding: 0px 16px;
+  border: 1px solid #949494;
+  border-radius: 8px;
+}
+
+.form-message > textarea{
+  height: 118.4px;
+  width: 282px;
+  padding: 16px;
+  border: 1px solid #949494;
+  border-radius: 8px;
+}
+
+.email-button{
+  height: 48px;
+  width: 144.99px;
+  padding: 0px 27px;
+  background-color: #333333;
+  color: white;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: 'GTSuperText', Georgia, serif;
+  margin-left: 510px;
+}
+
+/* footer */
+.footer{
+  width: 1290px;
+  height: 245px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-signature img{
+  height: 40px;
+  width: 165px;
+  padding-top: 64px;
+  margin-bottom: 10px;  
+  vertical-align: middle;
+}
+
+.occupation{
+  height: 24px;
+  width: 353.663px;
+  font-size: 16px;
+  color: #161f38;
+  font-family: 'GTSuperText', Georgia, serif;
+}
+
+.footer-linkedin{
+  text-decoration: none;
+  /* margin-top: 32px; */
+  /* padding-bottom: 40px; */
+  vertical-align: middle;
+}
+
+.footer-twitter{
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.footer-github{
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.footer-linkedin > img{
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+.footer-twitter > img{
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+.footer-github > img{
+  height: 25px;
+  width: 25px;
+  
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+.footer-copyright{
+  font-size: 16px;
+  color: #161f38;
+  display: inline-block;
+  float: right;
+  margin-top: 32px;
+  padding-bottom: 40px;
+} 
+
